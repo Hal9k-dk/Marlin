@@ -171,22 +171,22 @@
 // PID settings:
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define BANG_MAX 100 // limits current to nozzle while in bang-bang mode; 255=full current
-#define PID_MAX 104 // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
+#define BANG_MAX 255 // limits current to nozzle while in bang-bang mode; 255=full current
+#define PID_MAX 255 // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #ifdef PIDTEMP
   //#define PID_DEBUG // Sends debug data to the serial port.
   //#define PID_OPENLOOP 1 // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
   #define PID_FUNCTIONAL_RANGE 16 // If the temperature difference between the target temperature and the actual temperature
                                   // is more then PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
-  #define PID_INTEGRAL_DRIVE_MAX 100  //limit for the integral term should be set under PID_MAX term
+  #define PID_INTEGRAL_DRIVE_MAX PID_MAX  //limit for the integral term should be set under PID_MAX term
   #define K1 0.96 //smoothing factor within the PID
   #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // Buda 2.0 on 24V
-    #define  DEFAULT_Kp 6
-    #define  DEFAULT_Ki .3
-    #define  DEFAULT_Kd 125
+    #define  DEFAULT_Kp 51.34
+    #define  DEFAULT_Ki 4.1
+    #define  DEFAULT_Kd 160.65
 
 // Buda 2.0 on 12V
 //    #define  DEFAULT_Kp 22.2
