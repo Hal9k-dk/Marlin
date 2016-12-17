@@ -64,7 +64,7 @@
 #endif
 
 #if MB(RAMPS_13_EFB) || MB(RAMPS_13_EFF) || MB(AZTEEG_X3) || MB(AZTEEG_X3_PRO) || MB(WITBOX) || MB(HEPHESTOS)
-  #define FAN_PIN            9 // (Sprinter config)
+  #define FAN_PIN            10 // (Sprinter config)
   #if MB(RAMPS_13_EFF)
     #define CONTROLLERFAN_PIN  -1 // Pin used for the fan to cool controller
   #endif
@@ -85,7 +85,7 @@
 #if MB(RAMPS_13_EFF)
   #define HEATER_0_PIN       8
 #else
-  #define HEATER_0_PIN       10   // EXTRUDER 1
+  #define HEATER_0_PIN       9   // EXTRUDER 1
 #endif
 
 #if MB(RAMPS_13_EFB) || MB(AZTEEG_X3) || MB(WITBOX) || MB(HEPHESTOS)
@@ -96,8 +96,8 @@
 
 #define HEATER_2_PIN       -1
 
-#define TEMP_0_PIN         13   // ANALOG NUMBERING
-#define TEMP_1_PIN         15   // ANALOG NUMBERING
+#define TEMP_0_PIN         15   // ANALOG NUMBERING
+#define TEMP_1_PIN         13   // ANALOG NUMBERING
 #define TEMP_2_PIN         -1   // ANALOG NUMBERING
 
 #if MB(RAMPS_13_EFF) || MB(RAMPS_13_EEF)
