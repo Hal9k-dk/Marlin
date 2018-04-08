@@ -1,7 +1,7 @@
 
 NOTE
 =======
-This version of Marlin is preconfigured for use with the LulzBot TAZ 3D printer with GLCD, using a 24Volt Power Supply.
+This version of Marlin is preconfigured for use with the LulzBot TAZ 3D printer with GLCD, using a 24Volt Power Supply, and an E3D Titan Aero
 
 ###Please use tags v2.1b and earlier for 12V power supplies
 
